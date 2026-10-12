@@ -23,9 +23,8 @@ export const CoverPage: React.FC = () => {
 
   return (
     <main
-      className={`relative w-screen h-screen overflow-hidden bg-[#0d131f] flex items-center justify-center select-none transition-opacity duration-500 ease-out ${
-        isNavigating ? 'opacity-0 scale-[1.01]' : 'opacity-100 scale-100'
-      }`}
+      className={`relative w-screen h-screen overflow-hidden bg-[#0d131f] flex items-center justify-center select-none transition-opacity duration-500 ease-out ${isNavigating ? 'opacity-0 scale-[1.01]' : 'opacity-100 scale-100'
+        }`}
     >
       {/* 
         16:9 Canvas container matching object-fit: cover exact geometry:
@@ -54,9 +53,9 @@ export const CoverPage: React.FC = () => {
 
         {/* 
           Invisible clickable area positioned exactly over the 'open' button:
-          Button boundaries measured on 6000x3375 source image:
-          X: 2494 to 3505 (left: 41.57%, width: 16.85%)
-          Y: 2393 to 2675 (top: 70.9%, height: 8.36%)
+          Button boundaries measured on latest 1920x1080 source image:
+          X: 857 to 1062 (left: 44.64%, width: 10.68%)
+          Y: 669 to 725 (top: 61.94%, height: 5.2%)
         */}
         <button
           id="open-journal-button"
@@ -65,10 +64,10 @@ export const CoverPage: React.FC = () => {
           aria-label="Open scrapbook journal"
           className="group absolute rounded-full cursor-pointer bg-transparent border-0 outline-none transition-all duration-300 ease-out focus-visible:ring-2 focus-visible:ring-white/80 active:scale-[0.98]"
           style={{
-            top: '70.9%',
-            left: '41.57%',
-            width: '16.85%',
-            height: '8.36%',
+            top: '61.94%',
+            left: '44.64%',
+            width: '10.68%',
+            height: '5.2%',
           }}
         >
           {/* Luminous glow halo on hover matching the rhinestone button */}
